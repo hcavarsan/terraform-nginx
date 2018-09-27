@@ -22,7 +22,7 @@ resource "aws_instance" "web" {
       "sudo yum install -y docker",
       "sudo yum install -y git",
       "sudo systemctl start docker",
-      "sudo docker run -d --name nginx -p 80:80 hcavarsan/nginx-exemplo:latest"
+      "sudo docker run -d --name nginx-exemplo -p 80:80 hcavarsan/nginx-exemplo:latest"
     ]
   }
 
