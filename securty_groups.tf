@@ -1,5 +1,5 @@
 resource "aws_security_group" "default" {
-  name        = "eip_example"
+  name        = "nginx1"
   description = "nginx"
 
 

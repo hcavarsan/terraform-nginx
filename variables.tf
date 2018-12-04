@@ -12,5 +12,5 @@ variable "aws_amis" {
 
 variable "key_name" {
   description = "Nome do par de chaves"
-  default = "consul"
+  default = "monorepo"
 }

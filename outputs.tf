@@ -1,7 +1,15 @@
-output "private ip" {
-  value = "${aws_instance.web.private_ip}"
+output "private ip site1" {
+  value = "${aws_instance.web1.private_ip}"
+}
+output "private ip site2" {
+  value = "${aws_instance.web2.private_ip}"
 }
 
-output "elastic ip" {
-  value = "52.206.108.67"
+output "site1" {
+  value = "${aws_eip_association.eip_site1.public_ip}"
 }
+
+output "site2" {
+  value = "${aws_eip_association.eip_site2.public_ip}"
+}
+
